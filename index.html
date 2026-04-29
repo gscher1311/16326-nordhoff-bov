@@ -84,6 +84,28 @@
   .price-compare .pc-value{font-size:18px;font-weight:700;color:#0a2540}
   .price-compare .pc-sub{font-size:12px;color:#666;margin-top:2px}
   @media (max-width:640px){.hero-img{height:220px;margin:-20px -20px 18px}.gallery img{height:140px}.price-compare{grid-template-columns:1fr}}
+  .tc-photo{text-align:center;margin-bottom:8px}
+  .headshot-img-lg{width:100px;height:100px;border-radius:50%;border:3px solid #b8985a;object-fit:cover;background:#0a2540;display:block;margin:0 auto 12px}
+  .headshot-initials{width:100px;height:100px;border-radius:50%;border:3px solid #b8985a;background:#0a2540;color:#fff;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:600;letter-spacing:1px;margin:0 auto 12px}
+  .tc-name-lg{font-size:18px;font-weight:700;color:#0a2540;text-align:center;margin-bottom:2px}
+  .tc-title-lg{font-size:11px;color:#b8985a;text-transform:uppercase;letter-spacing:1px;text-align:center;margin-bottom:14px;font-weight:600}
+  .tc-bio{font-size:13.5px;color:#444;line-height:1.6;margin-bottom:14px}
+  .tc-contact-lg{font-size:13px;color:#0a2540;text-align:center;padding-top:12px;border-top:1px solid #e6e9ef;line-height:1.7}
+  .tc-contact-lg a{color:#0a4a8a;text-decoration:none}
+  .tc-contact-lg a:hover{text-decoration:underline}
+  .team-leaders{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:18px}
+  .team-roster{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px}
+  .roster-card{background:#f8fafc;border:1px solid #e6e9ef;border-radius:6px;padding:18px 12px;text-align:center}
+  .roster-card .headshot-img-lg{width:72px;height:72px;border-width:2px;margin-bottom:10px}
+  .roster-card .headshot-initials{width:72px;height:72px;border-width:2px;font-size:22px;margin-bottom:10px}
+  .roster-name{font-size:13px;font-weight:600;color:#0a2540;margin-bottom:2px}
+  .roster-title{font-size:11px;color:#888;letter-spacing:0.3px}
+  .section-tag{display:inline-block;background:#f4ead0;color:#7a5f1a;padding:4px 12px;border-radius:12px;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:12px}
+  .stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:16px 0 8px}
+  .stat-box{background:#0a2540;color:#fff;padding:18px;border-radius:6px;text-align:center}
+  .stat-num{font-size:24px;font-weight:700;color:#b8985a;margin-bottom:2px}
+  .stat-lbl{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#a8b3c2}
+  @media (max-width:760px){.team-leaders{grid-template-columns:1fr}.team-roster{grid-template-columns:repeat(2,1fr)}}
   footer{background:#0a2540;color:#a8b3c2;padding:32px 0;text-align:center;font-size:13px;border-top:4px solid #b8985a}
   footer .wrap p{margin-bottom:6px}
   footer strong{color:#fff}
@@ -346,27 +368,93 @@
 </section>
 
 <section>
+  <div class="section-tag">Listing Team</div>
   <h2>The LA Apartment Advisors Team</h2>
-  <p>LA Apartment Advisors (LAAA) is a Marcus &amp; Millichap investment sales team specializing in multifamily and land/development transactions across Los Angeles County and the broader Southern California market. We help property owners make confident investment decisions — whether buying, selling, or exploring the market.</p>
-  <div class="team-grid">
+  <p>LA Apartment Advisors (LAAA) is a Marcus &amp; Millichap investment sales team specializing in multifamily and land/development transactions across Los Angeles County. With 458+ transactions and over $1.46 billion in closed volume, we help property owners make confident investment decisions &mdash; whether buying, selling, or exploring the market.</p>
+
+  <div class="stat-row">
+    <div class="stat-box"><div class="stat-num">458+</div><div class="stat-lbl">Closed Transactions</div></div>
+    <div class="stat-box"><div class="stat-num">$1.46B+</div><div class="stat-lbl">Closed Volume</div></div>
+    <div class="stat-box"><div class="stat-num">#1</div><div class="stat-lbl">LA County Multifamily<br>(Trailing 3 Years)</div></div>
+  </div>
+
+  <div class="team-leaders">
     <div class="team-card">
-      <div class="team-name">Glen Scher</div>
-      <div class="team-title">Senior Managing Director Investments</div>
-      <div class="team-contact">
-        <div>&#9742; <a href="tel:+18182122808">(818) 212-2808</a></div>
-        <div>&#9993; <a href="mailto:Glen.Scher@marcusmillichap.com">Glen.Scher@marcusmillichap.com</a></div>
+      <div class="tc-photo"><img class="headshot-img-lg" src="images/headshot_glen.png" alt="Glen Scher"></div>
+      <div class="tc-name-lg">Glen Scher</div>
+      <div class="tc-title-lg">Senior Managing Director, Investments</div>
+      <p class="tc-bio">Glen Scher is a Senior Managing Director at Marcus &amp; Millichap and co-founder of the LAAA Team. A UC Santa Barbara graduate in Economics, Glen launched his career in 2014 and earned Rookie of the Year from the SFV Business Journal by 2016. A former Division I golfer, he captured three collegiate titles and was named UCSB Male Athlete of the Year.</p>
+      <div class="tc-contact-lg">
+        <a href="mailto:Glen.Scher@marcusmillichap.com">Glen.Scher@marcusmillichap.com</a><br>
+        <a href="tel:+18182122808">(818) 212-2808</a> &middot; CA Lic. 01962976
       </div>
     </div>
     <div class="team-card">
-      <div class="team-name">Filip Niculete</div>
-      <div class="team-title">Senior Managing Director Investments</div>
-      <div class="team-contact">
-        <div>&#9742; <a href="tel:+18182122748">(818) 212-2748</a></div>
-        <div>&#9993; <a href="mailto:Filip.Niculete@marcusmillichap.com">Filip.Niculete@marcusmillichap.com</a></div>
+      <div class="tc-photo"><img class="headshot-img-lg" src="images/headshot_filip.png" alt="Filip Niculete"></div>
+      <div class="tc-name-lg">Filip Niculete</div>
+      <div class="tc-title-lg">Senior Managing Director, Investments</div>
+      <p class="tc-bio">Filip Niculete is a Senior Managing Director at Marcus &amp; Millichap and co-founder of the LAAA Team. Born in Romania and raised in the San Fernando Valley, Filip studied Finance at San Diego State University and began his career at Marcus &amp; Millichap in 2011. Known for execution, integrity, and relentless work ethic, Filip and the LAAA Team consistently lead the market in active inventory across Los Angeles.</p>
+      <div class="tc-contact-lg">
+        <a href="mailto:Filip.Niculete@marcusmillichap.com">Filip.Niculete@marcusmillichap.com</a><br>
+        <a href="tel:+18182122748">(818) 212-2748</a> &middot; CA Lic. 01905352
       </div>
     </div>
   </div>
-  <div class="team-credential">Ranked <strong>#1 in Multifamily Transactions</strong> &mdash; Los Angeles County (Trailing 3 Years)</div>
+
+  <h3 style="margin-top:32px">Team Members</h3>
+  <div class="team-roster">
+    <div class="roster-card"><img class="headshot-img-lg" src="images/headshot_aida.png" alt="Aida Memary"><div class="roster-name">Aida Memary</div><div class="roster-title">Associate, Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/headshot_logan.png" alt="Logan Ward"><div class="roster-name">Logan Ward</div><div class="roster-title">Associate, Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/headshot_morgan.png" alt="Morgan Wetmore"><div class="roster-name">Morgan Wetmore</div><div class="roster-title">Associate, Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/headshot_luka.png" alt="Luka Leader"><div class="roster-name">Luka Leader</div><div class="roster-title">Associate, Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/headshot_alexandro.png" alt="Alexandro Tapia"><div class="roster-name">Alexandro Tapia</div><div class="roster-title">Associate, Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/headshot_blake.png" alt="Blake Lewitt"><div class="roster-name">Blake Lewitt</div><div class="roster-title">Associate, Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/headshot_mike.png" alt="Mike Palade"><div class="roster-name">Mike Palade</div><div class="roster-title">Agent Assistant</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/headshot_tony.png" alt="Tony H. Dang"><div class="roster-name">Tony H. Dang</div><div class="roster-title">Business Operations Manager</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-tag">Co-Listing Team</div>
+  <h2>The Agnew Serling Group</h2>
+  <p>The Agnew Serling Group is a Marcus &amp; Millichap investment sales team specializing in office, industrial, retail, and land/development transactions across Los Angeles County. With $1.1 billion in closed transaction value across 366 closed sales, the team brings unrivaled service in commercial real estate sales and leasing.</p>
+
+  <div class="stat-row">
+    <div class="stat-box"><div class="stat-num">366</div><div class="stat-lbl">Closed Sales</div></div>
+    <div class="stat-box"><div class="stat-num">$1.1B</div><div class="stat-lbl">Closed Volume</div></div>
+    <div class="stat-box"><div class="stat-num">LA</div><div class="stat-lbl">County Specialists</div></div>
+  </div>
+
+  <div class="team-leaders" style="grid-template-columns:repeat(3,1fr)">
+    <div class="team-card">
+      <div class="tc-photo"><div class="headshot-initials">MA</div></div>
+      <div class="tc-name-lg">Martin D. Agnew</div>
+      <div class="tc-title-lg">Senior Vice President, Investments</div>
+      <div class="tc-contact-lg">
+        <a href="mailto:magnew@marcusmillichap.com">magnew@marcusmillichap.com</a><br>
+        <a href="tel:+18182122744">(818) 212-2744</a> &middot; CA Lic. 01339034
+      </div>
+    </div>
+    <div class="team-card">
+      <div class="tc-photo"><div class="headshot-initials">RS</div></div>
+      <div class="tc-name-lg">Ryan Rothstein-Serling</div>
+      <div class="tc-title-lg">First Vice President, Investments</div>
+      <div class="tc-contact-lg">
+        <a href="mailto:rserling@marcusmillichap.com">rserling@marcusmillichap.com</a><br>
+        <a href="tel:+18182122725">(818) 212-2725</a> &middot; CA Lic. 01920619
+      </div>
+    </div>
+    <div class="team-card">
+      <div class="tc-photo"><div class="headshot-initials">JY</div></div>
+      <div class="tc-name-lg">Joshua Yaris</div>
+      <div class="tc-title-lg">Associate, Investments</div>
+      <div class="tc-contact-lg">
+        <a href="mailto:josh.yaris@marcusmillichap.com">josh.yaris@marcusmillichap.com</a><br>
+        <a href="tel:+18182122665">(818) 212-2665</a> &middot; CA Lic. 02073440
+      </div>
+    </div>
+  </div>
+  <p style="margin-top:18px;font-size:13px;color:#666;text-align:center"><em>Tagline: "Unrivaled Service in Commercial Real Estate Sales &amp; Leasing"</em></p>
 </section>
 
 <section>
