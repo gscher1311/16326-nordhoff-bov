@@ -46,6 +46,44 @@
   .price-band-sub{font-size:13px;color:#666}
   .footer-note{font-size:12px;color:#666;margin-top:8px;font-style:italic}
   .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:8px}
+  .team-card{background:#f8fafc;border:1px solid #e6e9ef;border-radius:6px;padding:22px;border-top:3px solid #b8985a}
+  .team-name{font-size:18px;font-weight:700;color:#0a2540;margin-bottom:4px}
+  .team-title{font-size:13px;color:#666;font-weight:500;margin-bottom:14px;text-transform:uppercase;letter-spacing:0.5px}
+  .team-contact{font-size:14px;line-height:1.7}
+  .team-contact a{color:#0a4a8a;text-decoration:none}
+  .team-contact a:hover{text-decoration:underline}
+  .team-credential{background:#0a2540;color:#fff;padding:14px 20px;border-radius:6px;text-align:center;margin-top:18px;font-size:14px;letter-spacing:0.3px}
+  .team-credential strong{color:#b8985a;font-size:15px;letter-spacing:0.8px}
+  .inv-cat{font-size:13px;font-weight:700;color:#b8985a;letter-spacing:1.2px;text-transform:uppercase;margin:18px 0 10px;padding-bottom:6px;border-bottom:1px solid #e6e9ef}
+  .inv-cat:first-of-type{margin-top:8px}
+  .inv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+  .inv-item{background:#f8fafc;padding:14px 16px;border-radius:5px;border-left:3px solid #0a4a8a;font-size:14px}
+  .inv-addr{font-weight:600;color:#0a2540;margin-bottom:4px}
+  .inv-meta{color:#444;font-size:13px}
+  .inv-price{color:#0a2540;font-weight:700}
+  .laaa-cta{text-align:center;margin-top:22px;padding-top:18px;border-top:1px solid #e6e9ef}
+  .laaa-cta a{display:inline-block;background:#0a2540;color:#fff;text-decoration:none;padding:12px 28px;border-radius:4px;font-weight:600;font-size:14px;letter-spacing:0.5px;transition:background 0.15s}
+  .laaa-cta a:hover{background:#143b6b}
+  .laaa-cta-sub{font-size:13px;color:#666;margin-top:10px}
+  .hero-img{margin:-32px -32px 24px;height:340px;background-size:cover;background-position:center;border-radius:8px 8px 0 0;position:relative}
+  .hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(10,37,64,0.35));border-radius:8px 8px 0 0}
+  .specs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:16px 0 8px}
+  .spec{background:#f8fafc;padding:14px 16px;border-radius:5px;border-left:3px solid #b8985a}
+  .spec-label{font-size:11px;color:#666;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;margin-bottom:4px}
+  .spec-value{font-size:16px;color:#0a2540;font-weight:600;line-height:1.3}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-top:18px}
+  .gallery img{width:100%;height:170px;object-fit:cover;border-radius:4px;display:block}
+  .map-block{margin-top:18px}
+  .map-block img{width:100%;max-height:380px;object-fit:cover;border-radius:5px;display:block}
+  .price-compare{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+  .price-compare > div{padding:14px 16px;border-radius:5px;font-size:13px}
+  .price-current{background:#fbeaea;border-left:3px solid #a02020}
+  .price-rec{background:#e8f4ea;border-left:3px solid #1f6b35}
+  .price-compare .pc-label{font-size:11px;color:#666;text-transform:uppercase;letter-spacing:0.8px;font-weight:600;margin-bottom:4px}
+  .price-compare .pc-value{font-size:18px;font-weight:700;color:#0a2540}
+  .price-compare .pc-sub{font-size:12px;color:#666;margin-top:2px}
+  @media (max-width:640px){.hero-img{height:220px;margin:-20px -20px 18px}.gallery img{height:140px}.price-compare{grid-template-columns:1fr}}
   footer{background:#0a2540;color:#a8b3c2;padding:32px 0;text-align:center;font-size:13px;border-top:4px solid #b8985a}
   footer .wrap p{margin-bottom:6px}
   footer strong{color:#fff}
@@ -71,11 +109,11 @@
   <div class="wrap">
     <div class="eyebrow">Confidential Market Analysis</div>
     <h1>16326 Nordhoff Street</h1>
-    <div class="sub">North Hills, CA 91343 &middot; Residential Development Site</div>
+    <div class="sub">North Hills, CA 91343 &middot; 27,230 SF (0.63 ac) Redevelopment Site</div>
     <div class="meta">
       <div><strong>Prepared</strong>April 29, 2026</div>
-      <div><strong>Scope</strong>Comparable Sales &amp; Active Supply</div>
-      <div><strong>Use Case</strong>SB9 / SB1123 Development</div>
+      <div><strong>Zoning</strong>A2-1 / ZI-2438</div>
+      <div><strong>Use Case</strong>SB9 &mdash; 4 SFRs / 2 Lots</div>
     </div>
   </div>
 </header>
@@ -89,11 +127,11 @@
   <div class="takeaways">
     <div class="tk">
       <div class="tk-num">FINDING 01</div>
-      <div class="tk-text"><strong>True 30K SF residential dev sites in North Hills 91343 are not on the market today.</strong> Subject is a rare offering in its immediate ZIP.</div>
+      <div class="tk-text"><strong>Comparable residential dev sites in North Hills 91343 are not on the market today.</strong> Subject is a rare offering in its immediate ZIP.</div>
     </div>
     <div class="tk">
       <div class="tk-num">FINDING 02</div>
-      <div class="tk-text"><strong>Closed comps cluster at $28&ndash;$40/SF</strong> for the 27K&ndash;45K SF size band — supported by five Valley transactions across 2024&ndash;2026.</div>
+      <div class="tk-text"><strong>The closest direct comparable closed at $31/SF.</strong> 18838 Lanark, Reseda (27,386 SF &mdash; nearly identical to subject's 27,230 SF) closed 3/20/26 at $850,000.</div>
     </div>
     <div class="tk">
       <div class="tk-num">FINDING 03</div>
@@ -104,6 +142,41 @@
       <div class="tk-text"><strong>An identifiable repeat buyer is actively accumulating SB9/SB1123 sites</strong> in this size band. Pre-marketing access available.</div>
     </div>
   </div>
+</section>
+
+<section>
+  <div class="hero-img" style="background-image:url('images/gallery_woods.jpg')"></div>
+  <h2>Subject Property</h2>
+  <p>Marcus &amp; Millichap is pleased to present <strong>16324-16326 Nordhoff St</strong> in North Hills &mdash; a rare <strong>street-to-street development opportunity</strong> in the heart of the San Fernando Valley. The offering consists of an approximate <strong>0.63-acre A2-1 zoned parcel</strong>, currently improved with a single-family home and equine enclosure, to be delivered <strong>vacant at the close of escrow</strong> with no tenants to relocate and no affordable units to replace. Senate Bill 9 (SB9) allows the parcel to be subdivided into two lots with two detached residential dwelling units on each &mdash; <strong>four detached single-family homes total at 3:1 FAR</strong>.</p>
+
+  <div class="specs-grid">
+    <div class="spec"><div class="spec-label">Lot Size</div><div class="spec-value">27,230 SF<br><span style="font-weight:400;font-size:13px;color:#666">0.63 acres</span></div></div>
+    <div class="spec"><div class="spec-label">Lot Dimensions</div><div class="spec-value">94 ft &times; 290 ft</div></div>
+    <div class="spec"><div class="spec-label">APN</div><div class="spec-value">2688-003-002</div></div>
+    <div class="spec"><div class="spec-label">Zoning</div><div class="spec-value">A2-1 / ZI-2438</div></div>
+    <div class="spec"><div class="spec-label">Access Points</div><div class="spec-value">Nordhoff St<br><span style="font-weight:400;font-size:13px;color:#666">Sunburst St / Gothic Ave Alley</span></div></div>
+    <div class="spec"><div class="spec-label">Improvements</div><div class="spec-value">SFR + Equine<br><span style="font-weight:400;font-size:13px;color:#666">Vacant at COE</span></div></div>
+  </div>
+
+  <h3>Property Highlights</h3>
+  <ul>
+    <li><strong>Rare street-to-street development opportunity</strong> in the heart of the San Fernando Valley.</li>
+    <li><strong>Three-sided access</strong> via Nordhoff Street, Sunburst Street, and the Alley of Gothic Avenue &mdash; full design flexibility for the developer.</li>
+    <li><strong>Immediate development potential</strong> &mdash; delivered vacant at COE.</li>
+    <li><strong>SB9 development plan:</strong> proposed lot split into two parcels with four detached single-family homes (two per lot) at 3:1 FAR. Per-lot setbacks of 4 ft side/rear, 25 ft front, 45 ft height.</li>
+    <li><strong>Central San Fernando Valley location</strong> &mdash; 0.8 miles from I-405, 0.5 miles from James Monroe High School, 2.2 miles from CSUN (33,551+ student enrollment).</li>
+    <li><strong>Dense infill demographics</strong> &mdash; 701,897 population and $93,150 average household income within a 5-mile radius.</li>
+  </ul>
+
+  <div class="gallery">
+    <img src="images/hero_aerial.jpg" alt="Aerial view of subject property">
+    <img src="images/gallery_barn.jpg" alt="Existing improvements &mdash; equine structures">
+    <img src="images/gallery_pool.jpg" alt="Backyard / pool area">
+    <img src="images/gallery_frontage.jpg" alt="Property frontage">
+    <img src="images/gallery_buildings.jpg" alt="Existing single-family residence">
+  </div>
+
+  <div class="map-block"><img src="images/area_map.jpg" alt="Local area map &mdash; San Fernando Valley"></div>
 </section>
 
 <section>
@@ -241,15 +314,27 @@
 
   <div class="recommend">
     <h3>Defensible List Range</h3>
-    <div class="price-band">$1,050,000 &ndash; $1,350,000</div>
-    <div class="price-band-sub">$35 &ndash; $45 per lot square foot &middot; assuming ~30,000 SF subject lot</div>
-    <p style="margin-top:14px;margin-bottom:0;font-size:14px"><strong>Strategic note:</strong> Pricing inside this band lets us sit comfortably above closed-comp $/SF (capturing scarcity premium) while undercutting the bidless $48+/SF active comps by 6&ndash;25%. We expect this to generate competitive offers within 30&ndash;60 days.</p>
+    <div class="price-band">$950,000 &ndash; $1,225,000</div>
+    <div class="price-band-sub">$35 &ndash; $45 per lot square foot &middot; based on 27,230 SF subject lot</div>
+    <div class="price-compare">
+      <div class="price-current">
+        <div class="pc-label">Current Marketing Price</div>
+        <div class="pc-value">$1,699,000</div>
+        <div class="pc-sub">$62.39/SF &middot; ~28% above bidless active-list zone</div>
+      </div>
+      <div class="price-rec">
+        <div class="pc-label">Recommended Reposition</div>
+        <div class="pc-value">$950K &ndash; $1.225M</div>
+        <div class="pc-sub">$35&ndash;$45/SF &middot; aligned with closed-comp band</div>
+      </div>
+    </div>
+    <p style="margin-top:14px;margin-bottom:0;font-size:14px"><strong>Strategic note:</strong> Repositioning into this band places the asset above the closed-comp midpoint (capturing scarcity premium for a true 27K SF dev site in 91343) while sitting clearly below the bidless $48+/SF zone where Woodley and Jellico have stalled. We expect this range to generate competitive offers within 30&ndash;60 days, including direct outreach to the active local-developer accumulators identified below.</p>
   </div>
 </section>
 
 <section>
   <h2>Active Buyer Profile</h2>
-  <p>Public records analysis identified a <strong>repeat institutional buyer</strong> currently accumulating SB9/SB1123 development sites in the San Fernando Valley:</p>
+  <p>Public records analysis identified <strong>repeat local developers</strong> currently accumulating SB9/SB1123 development sites in the San Fernando Valley:</p>
   <ul>
     <li><strong>Operator:</strong> LLC cluster operating from <strong>P.O. Box 56692, Sherman Oaks, CA 91413</strong></li>
     <li><strong>Entity examples:</strong> Parthenia Ave Villas LLC, Encino Ave Villas LLC, 17545 Parthenia St LLC</li>
@@ -261,9 +346,77 @@
 </section>
 
 <section>
-  <h2>Methodology &amp; Sources</h2>
-  <p>Comparable transactions sourced from LightBox public-record assessor data. Active listing inventory verified across LoopNet, Crexi, Compass, Homes.com, and BestAgentInCali (NR region) as of April 29, 2026. Two active listings carry "call broker" pricing where the public-facing aggregator did not expose ask price; addresses confirmed to exist via listing description matching.</p>
-  <p class="footer-note">All pricing recommendations are professional opinions of value based on the market data presented. Actual transaction pricing will be determined by negotiated terms with the eventual buyer.</p>
+  <h2>The LA Apartment Advisors Team</h2>
+  <p>LA Apartment Advisors (LAAA) is a Marcus &amp; Millichap investment sales team specializing in multifamily and land/development transactions across Los Angeles County and the broader Southern California market. We help property owners make confident investment decisions — whether buying, selling, or exploring the market.</p>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-name">Glen Scher</div>
+      <div class="team-title">Senior Managing Director Investments</div>
+      <div class="team-contact">
+        <div>&#9742; <a href="tel:+18182122808">(818) 212-2808</a></div>
+        <div>&#9993; <a href="mailto:Glen.Scher@marcusmillichap.com">Glen.Scher@marcusmillichap.com</a></div>
+      </div>
+    </div>
+    <div class="team-card">
+      <div class="team-name">Filip Niculete</div>
+      <div class="team-title">Senior Managing Director Investments</div>
+      <div class="team-contact">
+        <div>&#9742; <a href="tel:+18182122748">(818) 212-2748</a></div>
+        <div>&#9993; <a href="mailto:Filip.Niculete@marcusmillichap.com">Filip.Niculete@marcusmillichap.com</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="team-credential">Ranked <strong>#1 in Multifamily Transactions</strong> &mdash; Los Angeles County (Trailing 3 Years)</div>
+</section>
+
+<section>
+  <h2>Current Inventory</h2>
+  <p>A snapshot of properties LAAA currently has on the market. Selling 16326 Nordhoff means access to the active buyer pool engaged across the entire portfolio below.</p>
+
+  <div class="inv-cat">Multifamily</div>
+  <div class="inv-grid">
+    <div class="inv-item">
+      <div class="inv-addr">10455 Magnolia Blvd, North Hollywood</div>
+      <div class="inv-meta"><span class="inv-price">$9,800,000</span> &middot; 26 units</div>
+    </div>
+    <div class="inv-item">
+      <div class="inv-addr">2700 White Ln, Bakersfield</div>
+      <div class="inv-meta"><span class="inv-price">$8,950,000</span> &middot; 149 units</div>
+    </div>
+    <div class="inv-item">
+      <div class="inv-addr">180 Holly Ave, Carpinteria</div>
+      <div class="inv-meta"><span class="inv-price">$8,950,000</span> &middot; 19 units</div>
+    </div>
+    <div class="inv-item">
+      <div class="inv-addr">755 E Pine St, Altadena</div>
+      <div class="inv-meta"><span class="inv-price">$5,590,000</span> &middot; 19 units</div>
+    </div>
+  </div>
+
+  <div class="inv-cat">Land &amp; Development</div>
+  <div class="inv-grid">
+    <div class="inv-item">
+      <div class="inv-addr">3219-3249 Overland Ave, Los Angeles</div>
+      <div class="inv-meta"><span class="inv-price">$11,990,000</span> &middot; 100 buildable units</div>
+    </div>
+    <div class="inv-item">
+      <div class="inv-addr">5511 Ethel Ave, Sherman Oaks</div>
+      <div class="inv-meta"><span class="inv-price">$9,000,000</span> &middot; 199 buildable units</div>
+    </div>
+    <div class="inv-item">
+      <div class="inv-addr">12335 Osborne Pl, Pacoima</div>
+      <div class="inv-meta"><span class="inv-price">$5,000,000</span> &middot; 293 buildable units</div>
+    </div>
+    <div class="inv-item">
+      <div class="inv-addr">10898 Olinda St, Sun Valley</div>
+      <div class="inv-meta"><span class="inv-price">$2,500,000</span> &middot; 78 buildable units</div>
+    </div>
+  </div>
+
+  <div class="laaa-cta">
+    <a href="https://laaa.com" target="_blank" rel="noopener">View Full Portfolio at LAAA.com &rarr;</a>
+    <div class="laaa-cta-sub">Live listings, recent closings, and team updates</div>
+  </div>
 </section>
 
 </div>
@@ -271,8 +424,8 @@
 
 <footer>
   <div class="wrap">
-    <p><strong>Marcus &amp; Millichap</strong></p>
-    <p>Confidential Seller Materials &middot; Prepared April 29, 2026</p>
+    <p><strong>LA Apartment Advisors</strong> &middot; Marcus &amp; Millichap</p>
+    <p><a href="https://laaa.com" style="color:#b8985a;text-decoration:none">laaa.com</a> &middot; Confidential Seller Materials &middot; Prepared April 29, 2026</p>
   </div>
 </footer>
 </body>
